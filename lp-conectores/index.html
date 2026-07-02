@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Conectores | +900 modelos disponíveis | Proesi</title>
+  <meta name="description" content="Conheça a variedade de conectores da Proesi: áudio/vídeo, bornes, industrial, dados, energia e muito mais. Mais de 900 modelos disponíveis." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero" aria-label="Banner Conectores Proesi">
+    <picture>
+      <img class="hero__img hero__img--desktop" src="assets/banner-desktop.png" alt="Conectores Proesi - mais de 900 modelos disponíveis" fetchpriority="high" />
+      <img class="hero__img hero__img--mobile" src="assets/banner-mobile.png" alt="Conectores Proesi - mais de 900 modelos disponíveis" fetchpriority="high" />
+    </picture>
+  </header>
+
+  <main>
+    <section class="categorias" aria-labelledby="categorias-titulo">
+      <div class="container">
+        <div class="categorias__header">
+          <h1 id="categorias-titulo" class="categorias__title">Categorias</h1>
+          <p class="categorias__subtitle">Conheça as variedades de conectores disponíveis na Proesi:</p>
+        </div>
+
+        <nav class="cat-nav" id="category-nav" aria-label="Filtrar por categoria"></nav>
+        <select class="cat-select" id="category-select" aria-label="Filtrar por categoria"></select>
+
+        <div class="product-grid" id="product-grid" role="list"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; Proesi - Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
