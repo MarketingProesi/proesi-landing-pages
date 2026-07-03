@@ -40,20 +40,5 @@
 
   <script src="script.js" defer></script>
 
-<script>
-function sendHeight() {
-  const height = document.documentElement.scrollHeight;
-  parent.postMessage({
-    type: 'lpHeight',
-    height: height
-  }, '*');
-}
-
-window.addEventListener('load', sendHeight);
-window.addEventListener('resize', sendHeight);
-
-const observer = new ResizeObserver(sendHeight);
-observer.observe(document.body);
-</script> 
 </body>
 </html>
