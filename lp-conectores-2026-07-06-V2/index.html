@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Conectores | +900 modelos disponíveis | Proesi</title>
+  <meta name="description" content="Conheça a variedade de conectores da Proesi: áudio/vídeo, bornes, industrial, dados, energia e muito mais. Mais de 900 modelos disponíveis." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero" aria-label="Banner Conectores Proesi">
+    <picture>
+      <img id="hero-banner-desktop" class="hero__img hero__img--desktop" alt="Conectores Proesi - mais de 900 modelos disponíveis" fetchpriority="high" />
+      <img id="hero-banner-mobile" class="hero__img hero__img--mobile" alt="Conectores Proesi - mais de 900 modelos disponíveis" fetchpriority="high" />
+    </picture>
+  </header>
+
+  <main>
+    <nav class="view-tabs" aria-label="Modo de visualização">
+      <div class="container view-tabs__inner">
+        <button type="button" class="view-tab is-active" data-view="categorias" aria-pressed="true">
+          <svg class="view-tab__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          <span>Navegar por categorias</span>
+        </button>
+        <button type="button" class="view-tab" data-view="todos" aria-pressed="false">
+          <svg class="view-tab__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4zM14 14h6v6h-6z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+          <span>Conferir todos os modelos</span>
+        </button>
+      </div>
+
+      <div class="container view-switcher" id="view-switcher">
+        <button type="button" class="view-switcher__toggle" id="view-switcher-toggle" aria-haspopup="true" aria-expanded="false" aria-controls="view-switcher-menu">
+          <span class="view-switcher__label" id="view-switcher-label">
+            <span class="view-switcher__emoji" aria-hidden="true">📂</span>
+            <span class="view-switcher__text">Navegar por categorias</span>
+          </span>
+          <svg class="view-switcher__chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <ul class="view-switcher__menu" id="view-switcher-menu" role="menu" hidden>
+          <li role="none">
+            <button type="button" role="menuitem" class="view-switcher__item is-active" data-view="categorias">
+              <span class="view-switcher__emoji" aria-hidden="true">📂</span>
+              <span>Navegar por categorias</span>
+            </button>
+          </li>
+          <li role="none">
+            <button type="button" role="menuitem" class="view-switcher__item" data-view="todos">
+              <span class="view-switcher__emoji" aria-hidden="true">📦</span>
+              <span>Conferir todos os modelos</span>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="categorias" aria-labelledby="categorias-titulo">
+      <div class="container">
+        <div class="categorias__header">
+          <h1 id="categorias-titulo" class="categorias__title">Categorias</h1>
+          <p class="categorias__subtitle">Conheça as variedades de conectores disponíveis na Proesi:</p>
+        </div>
+
+        <nav class="cat-nav" id="category-nav" aria-label="Filtrar por categoria"></nav>
+        <select class="cat-select" id="category-select" aria-label="Filtrar por categoria"></select>
+
+        <div class="product-grid" id="product-grid" role="list"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; Proesi - Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
